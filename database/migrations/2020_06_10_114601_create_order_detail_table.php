@@ -19,6 +19,7 @@ class CreateOrderDetailTable extends Migration
             $table->foreignId('item_id');
             $table->integer('qty');
             $table->bigInteger('price');
+            $table->bigInteger('jumlah_dibayar');
             $table->bigInteger('laba');
             $table->timestamps();
         });
